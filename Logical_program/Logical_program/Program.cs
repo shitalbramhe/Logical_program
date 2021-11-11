@@ -6,7 +6,7 @@ namespace Logical_program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n 2. Exit");
+            Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n 2. Perfect Number \n3. Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
             while (flag)
@@ -19,6 +19,10 @@ namespace Logical_program
                         Fibonacci.Fibo(number);
                         break;
                     case 2:
+                        Perfect_number perfectnum = new Perfect_number();
+                        perfectnum.Perfect();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
