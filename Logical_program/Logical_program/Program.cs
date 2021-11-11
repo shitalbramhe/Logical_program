@@ -10,7 +10,7 @@ namespace Logical_program
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Exit");
+                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,10 @@ namespace Logical_program
                         primenum.Prime();
                         break;
                     case 4:
+                        ReverseNumber reversenum = new ReverseNumber();
+                        reversenum.Reverse();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }

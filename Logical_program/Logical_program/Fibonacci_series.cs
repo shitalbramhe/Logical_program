@@ -11,7 +11,7 @@ namespace Logical_program
         int first = 0, second = 1, third = 0;
         public void Fibo(int n)
         {
-            Console.WriteLine("Fibonacci series is\n");
+            Console.WriteLine("Fibonacci series is");
             if (n == 0)
             {
                 Console.WriteLine(first);
