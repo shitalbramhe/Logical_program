@@ -11,7 +11,7 @@ namespace Logical_program
         int number, sum = 0, n;
         public void Perfect()
         {
-            Console.Write("enter the Number");
+            Console.Write("\n Enter the Number to check perfect number");
             number = Convert.ToInt32(Console.ReadLine());
             n = number;
             for (int i = 1; i < number; i++)
@@ -23,13 +23,11 @@ namespace Logical_program
             }
             if (sum == n)
             {
-                Console.WriteLine("\n Entered number is a perfect number");
-                Console.ReadLine();
+                Console.WriteLine(number+" Entered number is a perfect number");
             }
             else
             {
-                Console.WriteLine("\n Entered number is not a perfect number");
-                Console.ReadLine();
+                Console.WriteLine(number + " Entered number is not a perfect number");
             }
         }
     }

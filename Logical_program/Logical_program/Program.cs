@@ -6,11 +6,12 @@ namespace Logical_program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n 2. Perfect Number \n3. Exit");
-            int option = Convert.ToInt32(Console.ReadLine());
+            
             bool flag = true;
             while (flag)
             {
+                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Exit");
+                int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
@@ -23,6 +24,10 @@ namespace Logical_program
                         perfectnum.Perfect();
                         break;
                     case 3:
+                        Prime_number primenum = new Prime_number();
+                        primenum.Prime();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
