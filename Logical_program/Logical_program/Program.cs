@@ -10,7 +10,7 @@ namespace Logical_program
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Exit");
+                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +32,12 @@ namespace Logical_program
                         reversenum.Reverse();
                         break;
                     case 5:
+                        Temperature_conv temperature = new Temperature_conv();
+                        Console.WriteLine("Enter value of temperature ");
+                        int temp = Convert.ToInt32(Console.ReadLine());
+                        temperature.temperatureconversion(temp);
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
