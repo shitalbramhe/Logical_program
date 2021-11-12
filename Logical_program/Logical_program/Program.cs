@@ -10,7 +10,7 @@ namespace Logical_program
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Exit");
+                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Monthly payment \n7. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,6 +38,16 @@ namespace Logical_program
                         temperature.temperatureconversion(temp);
                         break;
                     case 6:
+                        Monthly_payment month = new Monthly_payment();
+                        Console.WriteLine("Enter the value of principal");
+                        double p = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Enter the year");
+                        double y = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Enter the rate : ");
+                        double R = Convert.ToDouble(Console.ReadLine());
+                        month.monthlypayment(p,y,R);
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
