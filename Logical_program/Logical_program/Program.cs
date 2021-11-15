@@ -10,7 +10,7 @@ namespace Logical_program
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Monthly payment \n7. Exit");
+                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Monthly payment \n7. Vending machine \n8. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -48,6 +48,12 @@ namespace Logical_program
                         month.monthlypayment(p,y,R);
                         break;
                     case 7:
+                        Console.WriteLine("Enter Amount to get Change");
+                        int amount = Convert.ToInt32(Console.ReadLine());
+                        Vendingmachine vending = new Vendingmachine();
+                        vending.Getchange(amount);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
