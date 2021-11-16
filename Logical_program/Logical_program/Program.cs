@@ -10,7 +10,7 @@ namespace Logical_program
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Monthly payment \n7. Vending machine \n8. Stopwatch program \n9. Exit");
+                Console.WriteLine("Enter Progran number to get excuted \n1. Fibonacci series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Temperatureconversion \n6. Monthly payment \n7. Vending machine \n8. Stopwatch program \n9. Day of week \n.10 Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -58,6 +58,17 @@ namespace Logical_program
                         measuretime.Elapsetime();
                         break;
                     case 9:
+                        dayofweek weekday = new dayofweek();
+                        Console.WriteLine("Enter day");
+                        int day = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter month");
+                        int Month = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter year");
+                        int year = Convert.ToInt32(Console.ReadLine());
+                        weekday.Day(day, Month, year);
+                        break;
+
+                    case 10:
                         flag = false;
                         break;
                 }
